@@ -1,0 +1,51 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=42", "wheel"] # Specify build tools needed
+build-backend = "setuptools.build_meta" # Standard backend
+
+[project]
+name = "tiktok-voice-unofficial" # Choose a name (added -unofficial to avoid PyPI conflict if original ever publishes)
+version = "0.1.0" # Start with an initial version
+authors = [
+    { name = "oscie57 (Original Author)", email = "author@example.com" }, # Placeholder email
+    # You can add yourself as a packager if you like:
+    # { name = "Your Name", email = "your@email.com" }
+]
+description = "An unofficial Python wrapper for the TikTok Text-to-Speech API."
+readme = "README.md" # Assumes README.md exists and is the long description
+requires-python = ">=3.6" # Based on code syntax (f-strings, etc.)
+license = { text = "License information missing in original repository" } # Be accurate about the license status
+keywords = ["tiktok", "tts", "text-to-speech", "voice", "api"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: Other/Proprietary License", # Reflects lack of clear open source license
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Development Status :: 4 - Beta", # Or "3 - Alpha"
+]
+
+# List runtime dependencies
+dependencies = [
+    "requests>=2.20.0", # Specify a reasonable minimum version
+    "pydub>=0.25.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/oscie57/tiktok-voice"
+# Add your fork URL if you created one:
+# "Repository" = "https://github.com/your-username/tiktok-voice"
+
+# Optional: If you want to specify entry points (command-line scripts)
+# [project.scripts]
+# tiktok-tts = "tiktok_voice.cli:main" # Example if a cli.py existed
+
+# --- End of pyproject.toml ---
