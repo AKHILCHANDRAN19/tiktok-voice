@@ -13,7 +13,7 @@ def read_readme(fname):
         return "" # Return empty string if README is not found
 
 setuptools.setup(
-    name="tiktok-voice-unofficial", # Choose a name (added -unofficial)
+    name="tiktok-voice", # Choose a name (added -unofficial)
     version="0.1.0", # Initial version
     author="oscie57 (Original Author)",
     author_email="author@example.com", # Placeholder email
